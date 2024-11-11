@@ -1,0 +1,71 @@
+immigration: [asyl*, ausländer*, einwander*, flüchtling, geflücht*, integration*, migrant*, migration*, immigration*, immigrant*, niederlassungsrecht, familiennachzug, staatsbürgerschaftsgesetz, bamf, refugee*, vertriebene*, schutzsuchende, heimatvertriebene, aussiedler, zuwanderung] # 20 words
+
+
+#### FRAME 1: Kultur -> 4 topics
+diversitaet: [assimilation, assimilationspolitik, assimilieren, assimiliert, assimilierte, integration, integrationsproblem, integrationsprobleme, integrationsminister, integrationsprojekte, integrationsarbeiten, mehrheitsgesellschaft, vielfaltskultur, vielfaltskulturalismus,
+multikulturell, multikulturelle, minderheitskultur, multikulti, multikulturalismus, multikulturell, multikulturelle, multikultureller] # vielfalt,
+
+sprache: [sprache, minderheitensprache, muttersprache, sprachtest, doppelsprachig, doppelsprache, mehrsprache, mehrsprachig, bilingual, multilingual, zweisprachig, sprachkurs, sprachschule, fremdsprache, deutschkurs, deutschkurse, deutschkenntnisse, deutschsprachkurs, deutschsprachig, fremdsprachig, sprachkenntnisse, deutschsprachförderverordnung, goethe-institut]
+
+nationale_identitaet: [identität, heimat, heimatland, patriot, patriotismus, volk, volksseele, vorreiterland, deutsch, durchschnittsdeutsch, durchschnittsdeutsche, volldeutsch, nicht-deutsch, deutschsein, urdeutsch, echtdeutsch] 
+
+religion: [biblisch, bibel, christlich, christen, katholisch, evangelisch, gott, gebetsruf, kirche, kirchlich, kirchenglocken, imam, islamisch, koran, vikar, moschee, priester, papst, pfarrer, bischof, bischöfe, muhammed, rabbi, rabbiner, jüdisch, juden, ramadan, synagoge]
+# zentralrat der muslime,
+
+### FRAME 2: Wirtschaft -> 6 topics
+arbeitsmarkt: [arbeitsamt, arbeitsverwaltung, arbeitsvermittlungsgesetz, arbeitslosenversicherung, arbeitsmarkt, arbeitsmarktfragen, arbeitsmarktkommission,
+arbeitsmarktgesetz, arbeitsmarktgesetze, arbeitsmarktgesetzgebung, arbeitsminister, arbeitsministerin, arbeitsmarktbereich, arbeitsmarktpolitik, arbeitsmarktbehörde, arbeitsagentur, jobcenter, arbeitslosengeld, hartz 4, hartz iv, hartz lv, fachkraft*, fachkräfte* ]
+
+haushalt: [haushaltsminister*, haushaltspolitik, haushaltspolitiker*, finanzministerium,  finanzminister*, finanzpolitik, steuerminister, steuerpolitik*]
+
+gesundheitspolitik: [gesundheitsminister*, ärztekammer, bundesärztekammer, krankenversicherungsrecht, gesundheitsfrage*, 
+gesundheitspolitik*, wohlfahrt und pflege, wohlfahrtspolitik*, altenpflege*, altenpolitik, seniorenpolitik]
+
+wohnen: [bundesministerium für wohnen, ministerium für wohnungswesen, wohnungswesen, wohnungsfrage*, wohnungsausschuss, wohnungsmarkt, wohnungspolitik*,  wohnungsuntersuchung, wohnungsagentur,
+mietervereinigung, bund deutscher mieter, deutscher mieterschutzbund, mieterschutzbund]
+
+bildung: [kindergarten, vorschule, vorschulpolitik, vorschulaktivitäten, schulangelegenheiten, schulrecht*, schulminister, bildung, bildungsminister*, schulbehörde, schulrat,
+schulpolitik, bildungspolitik, bildungsministerium, bundesministerium für bildung und forschung]
+
+wirtschaft: [unternehmen, unternehmer, euro, wirtschaft, wettbewerb, banken, bank, verbraucher, konsumenten]
+
+### FRAME 3: Menschenrechte -> 4 topics
+diskriminierung: [diskriminierung, diskriminierend, anti-diskriminierungsrecht,  diskriminierungsrecht, diskriminierungsgesetzgebung, anti-diskriminierungsgesetz, diskriminierungsuntersuchung, behindertenrechte, hassverbrechen, gleichbehandlungsgesetz, frauenhass, fremdenhass, geschlechterdiskriminierend, geschlechterdiskriminierung, rassendiskriminierung, rassendiskriminierend, altersdiskriminierung,
+altersdiskriminierend, benachteiligung, ungleichbehandlung, antidiskriminierungsstelle, mobbing, belästigung] # behinderten-ombudsmann, gleichstellungsombudsmann, ministerin für gleichstellung, minister für gleichstellung, diskriminierungs-ombudsmann,
+
+familie: [enkelkind*, familie, kernfamilie, großfamilie, kind, kinder*, bruder, schwester, großeltern, großmutter, großmütter, eltern, frau, mann, ehemann, ehefrau, mutter, mütter, großvater, großväter, vater, väter, geschwister]
+
+menschenrechte: [amnesty international, vereinte nationen, vereinten nationen, kinderrechtskonvention, europäische konvention, un-konvention*, un-konventionen, vn-konvention*, LGBTQ-rechte, menschenrecht*, humanitäres recht,
+menschenrechtsorganisation, menschenrechte, bürgerrechte, minderheitenrechte,
+rotes kreuz, unicef, völkerrecht]
+
+rassismus: [rassismus, rassistisch, fremdenfeindlich, ausländerfeindlichkeit, ausländerfeindlich, xenophobie, fremdenhass, fremdenfeindlichkeit, rassenhass, rechtsextremismus, rechtsextremist, nationalsozialistisch, neonazi, nazi, nationalsozialist, rassist, skinhead, alltagsrassismus]
+
+### FRAME 4: Politik -> 2 topics
+
+politische_parteien: [sozialdemokrat*, christdemokrat*, afd, cdu, csu, spd, grünen, fdp, linke, linkspartei, bayernpartei, zentrumspartei, fraktion, fraktionen]
+
+european_union: [eu, eu-kommission,  eu-minister, europäisch*, wirtschaftsraum, währungsunion, maastricht, stahlunion, unionsvertrag]
+
+
+### FRAME 5: Sicherheit -> 3 topics
+
+kriminalitaet: [bewährung, autodiebstahl, wohnungseinbruch, verbrechen, kriminalität, verbrecher, fahrraddiebstahl, tagesgeldstrafe, firmengeldstrafe, fussfessel, justiz*, justizminister*, kriminalpolitik, haftstrafe, körperverletzung, drogendelikt, drogenschmuggel, raubüberfall, polizeichef, polizeibehörde, forensik, polizei, sicherheitspolizei, sexualdelikte, schadensersatz, bewährung, belästigung, gefangene, vergewaltigung, verurteilung, entlassung]
+
+terrorismus: [is, breivik, baadermeinhof, lkw-anschlag, terrorist*, terror*, anschlag, terrorismuszelle, terrorzelle, bedrohungsstufe, terrorverdächtige, terrorismusverdächtige]
+
+verteidigung: [verteidigung, soldat, soldaten, bundeswehr, auslandseinsatz]
+
+### OTHER (not used for analysis)
+umwelt: [umwelt, klima, umweltschutz, klimakrise, klimawandel, klimakatastrophe]
+
+sport: [sport, sportpolitik, vereine, vereinswesen, sportverein, sportvereine, sportverbände, fifa, fußball, fussball]
+
+landwirtschaft: [landwirte, betriebe, landwirtschaft, agrar, agrarindustrie, agrarpolitik, landwirtschftlich, produkte, lebensmittel, ländlich]
+
+verkehr: [bahn, bundesbahn, schiene, verkehr, straße, straßen, autobahn, verkehrsminister]
+
+gesetzgebung: [gesetz, gesetzesentwurf, gesetzgebung, bundesrat]
+
+anrede: [meine, sehr, verehrten, geehrten, geehrte, geehrter, herr, frau, damen, herren, präsident, präsidentin, kollegen, kollegin, kollege, dr, kolleginnen]
+
