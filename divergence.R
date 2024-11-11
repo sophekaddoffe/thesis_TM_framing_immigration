@@ -1,4 +1,4 @@
-library(dplyr)
+iolibrary(dplyr)
 library(quanteda)
 library(topicmodels)
 library(seededlda)
@@ -33,7 +33,7 @@ mytokens <- tokens_remove(x = mytokens,
 # Make tokens lowercase
 mytokens <- tokens_tolower(x = mytokens)
 
-# How does it look now?
+# inspection
 mytokens
 
 # Create document term matrix
