@@ -8,47 +8,47 @@ library(broom)
 library(reshape2)
 library(lubridate)
 
-# speeches <- read.csv("speeches.csv") |>  # 907,644 obs
-#   filter(positionShort != "Presidium of Parliament", # 522,671 obs
-#          nchar(speechContent) > 100) #473,255
-# 
-# lda <- readRDS("final_seeded_model_ALL_DATA")
-# 
-# topic_dist_over_doc_ALL <- as.data.frame(lda$theta) |> 
-#   arrange(desc(immigration))
-# 
-# word_dist_over_topic <- as.data.frame(lda$phi)
-# write.csv(word_dist_over_topic, "word_distribution_FINAL.csv")
-# 
-# top_terms <- as.data.frame(terms(lda, n = 20))
-# write.csv(top_terms, "top20_terms_FINALMODEL")
-# 
-# topic_dist_over_doc_ALL$id <- rownames(topic_dist_over_doc_ALL)
-# 
-# df <- merge(topic_dist_over_doc_ALL, speeches, by = "id")|> 
-#   arrange(desc(immigration))
-# 
-# min(df$immigration) # 7.83024e-05
-# max(df$immigration) # 0.6679245
-# mean(df$immigration) # 0.02484453
-# sd(df$immigration) # 0.04487275
-# 
-# # hist(df$immigration,
-# #      xlab = "Immigration topic",
-# #      main = "Frequency histogram")
-# 
-# # Threshold for classifying documents as immigration-rich
-# threshold <- 0.1
-# 
-# # Classify documents as immigration-rich based on the threshold
-# df <- df |> 
-#   mutate(Immigration_Rich = ifelse(immigration > threshold, TRUE, FALSE)) 
-# 
-# summary(df$Immigration_Rich)
-# 
+speeches <- read.csv("speeches.csv") |>  # 907,644 obs
+  filter(positionShort != "Presidium of Parliament", # 522,671 obs
+         nchar(speechContent) > 100) #473,255
+
+lda <- readRDS("final_seeded_model_ALL_DATA")
+ 
+topic_dist_over_doc_ALL <- as.data.frame(lda$theta) |> 
+   arrange(desc(immigration))
+ 
+word_dist_over_topic <- as.data.frame(lda$phi)
+write.csv(word_dist_over_topic, "word_distribution_FINAL.csv")
+ 
+top_terms <- as.data.frame(terms(lda, n = 20))
+write.csv(top_terms, "top20_terms_FINALMODEL")
+ 
+topic_dist_over_doc_ALL$id <- rownames(topic_dist_over_doc_ALL)
+ 
+df <- merge(topic_dist_over_doc_ALL, speeches, by = "id")|> 
+  arrange(desc(immigration))
+ 
+min(df$immigration) # 7.83024e-05
+max(df$immigration) # 0.6679245
+mean(df$immigration) # 0.02484453
+sd(df$immigration) # 0.04487275
+ 
+# hist(df$immigration,
+#      xlab = "Immigration topic",
+#      main = "Frequency histogram")
+
+# Threshold for classifying documents as immigration-rich
+threshold <- 0.1
+ 
+# Classify documents as immigration-rich based on the threshold
+df <- df |> 
+  mutate(Immigration_Rich = ifelse(immigration > threshold, TRUE, FALSE)) 
+ 
+summary(df$Immigration_Rich)
+ 
 # write.csv(df, "speeches_topics_merged.csv")
 #########################################################################################
-df <- read.csv("speeches_topics_merged.csv")
+#df <- read.csv("speeches_topics_merged.csv")
 
 df_immigr_rich <- df |> 
   filter(Immigration_Rich == TRUE)
@@ -85,7 +85,7 @@ closest_election_dates <- vector("list", nrow(df_merged))
 # Loop through each row of df_merged
 for (i in 1:nrow(df_merged)) {
   # Get the speech date from the ith row
-  speech_date <- df_merged[i, 42]  # Assuming the speech date is in column 41
+  speech_date <- df_merged[i, 42]  #speech date is in column 41
   
   # Find the closest election date using the function
   closest_election_dates[[i]] <- find_next_election_date(speech_date)
@@ -122,32 +122,32 @@ CMP_data <- CMP_data |>
   select(-edate)
 
 
-# trimws(df_merged$abbreviation)
-# trimws(CMP_data$partyabbrev)
-# trimws(CMP_data$abbreviation)
-# 
-# unique(df_merged$abbreviation)
-# unique(CMP_data$abbreviation)
+trimws(df_merged$abbreviation)
+trimws(CMP_data$partyabbrev)
+trimws(CMP_data$abbreviation)
+ 
+unique(df_merged$abbreviation)
+unique(CMP_data$abbreviation)
 
 # checking if closest election variable works
-# speech_and_election_dates <- df_merged[c("date", "closest_election_date", "days_to_closest_election")]
-# random_100 <- speech_and_election_dates[sample(nrow(speech_and_election_dates), 100), ]
+speech_and_election_dates <- df_merged[c("date", "closest_election_date", "days_to_closest_election")]
+random_100 <- speech_and_election_dates[sample(nrow(speech_and_election_dates), 100), ]
 
 
 
 
 # Merge df_merged with CMP_data based on the closest next election date
-# merged_df <- df_merged |> 
-#   #mutate(date = as.Date(date, "%Y-%m-%d")) %>%
-#   left_join(CMP_data, by = c("date", "abbreviation" ))
-# 
+merged_df <- df_merged |> 
+  #mutate(date = as.Date(date, "%Y-%m-%d")) %>%
+  left_join(CMP_data, by = c("date", "abbreviation" ))
+ 
 
 
-#merged_df <- merge(CMP_data, df_merged, by = c("date", "abbreviation" ))
+merged_df <- merge(CMP_data, df_merged, by = c("date", "abbreviation" ))
 
 # checking if ideology variable works
-# party_and_ideology_var <- merged_df[c("date", "abbreviation", "rile")]
-# random_100ideology <- party_and_ideology_var[sample(nrow(party_and_ideology_var), 100), ]
+party_and_ideology_var <- merged_df[c("date", "abbreviation", "rile")]
+random_100ideology <- party_and_ideology_var[sample(nrow(party_and_ideology_var), 100), ]
 
 
 # df_merged
@@ -293,7 +293,7 @@ df_merged_with_inc[2434, "incumbency"] <- 0
 df_merged_with_inc[2450, "incumbency"] <- 0
 df_merged_with_inc[12853, "incumbency"] <- 0
 
-#write.csv(df_merged_with_inc, "df_w_independent_vars.csv")
+write.csv(df_merged_with_inc, "df_w_independent_vars.csv")
 
 
 #########################################################################################
