@@ -39,8 +39,6 @@ print(frame_summary)
 #########################################################################################
 
 
-# Assuming df_merged_with_inc contains the relevant variables
-
 # Model 1: Culture frame
 model_culture <- lm(culture_association ~ incumbency + rile, data = df_merged_with_inc) # + time_until_election + time_since_event
 
