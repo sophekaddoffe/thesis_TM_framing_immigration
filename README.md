@@ -11,7 +11,7 @@ Scripts for recreation of Seeded Topic Model:
 - exploration.R & model_comparison.R & model_eval_10samples.R & nr_of_topics.R: R scripts that were used for exploration and finding the right model configuration
 - divergence.R: R script to compute divergence scores on samples of the data for different numbers of k
 
-Script fo recreation of Data Set:
+Script for recreation of Data Set:
 
 - df_and_analysis_prep.R: R script used for manipulating the data extracted from the final seeded topic model used, as well as combining the data with information on the speakers (as well as their respective parties, if applicable) and event data in order to create the variables used for the analysis
 
